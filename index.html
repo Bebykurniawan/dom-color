@@ -6,6 +6,9 @@
     <title>Document</title>
 </head>
 <style>
+    body,html {
+height: 100%;
+    }
     * {
         margin:  0;
         padding: 0;
@@ -16,10 +19,36 @@
     .biru {
         background-color: rgb(3, 112, 255);
     }
+
+    .kotak {
+        width: 30px;
+        height: 30px;
+margin: 10px auto;
+}
+
+.merah {
+    background-color: red;
+}
+.hijau {
+    background-color: green;
+}
+.biru {
+    background-color: blue;
+}
 </style>
 <body>
     <h1>Play With Colors</h1>
     <button type="button" id="button">Ubah Warna</button>
+<br>
+    <div class="kotak merah"></div>
+    <input type="range" name="Red" min="0" max="255">
+<br>
+    <div class="kotak hijau"></div>
+    <input type="range" name="Green" min="0" max="255">
+<br>
+    <div class="kotak biru"></div>
+    <input type="range" name="Blue" min="0" max="255">
+
     <script src="index.js"></script>
 </body>
 </html>
